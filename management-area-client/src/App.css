@@ -1,38 +1,192 @@
-.App {
+img {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #e3f2fd;
+}
+.fa.fa-edit {
+  color: #18a2b9;
+  cursor: pointer;
+}
+
+.fa.fa-edit.absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.custom-edit {
+  cursor: pointer;
+}
+.list-group-item.delete:hover {
+  cursor: -webkit-grab;
+  background-color: pink;
+}
+
+.list-group-item.update:hover {
+  cursor: -webkit-grab;
+  background-color: gainsboro;
+}
+
+.list-group-item.board:hover {
+  cursor: -webkit-grab;
+  background-color: gainsboro;
+}
+
+.fa.fa-minus-circle {
+  color: red;
+}
+
+.landing {
+  position: relative;
+  /* background: url("../img/showcase.jpg") no-repeat; */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: -24px;
+  margin-bottom: -50px;
+}
+
+.landing-inner {
+  padding-top: 80px;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+.timeline-image {
+  opacity: 0;
+}
+.timeline-backgroundImage-padding {
+  padding-bottom: 10pt;
+}
+.timeline-card-text {
+  color: white;
+}
+.timeline-card-text-absolute {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+/* laptio screen => FHD */
+@media only screen and (min-width: 112.5rem) {
+  .fetchitem-max-row {
+    max-height: 50vh;
+    max-width: 90vw;
+    width: auto;
+    height: auto;
+  }
+}
+/* half screen , ipad pro */
+@media only screen and (min-width: 56.25rem) and (max-width: 112.5rem) {
+  .fetchitem-max-row {
+    max-height: 60vh;
+    max-width: 60vw;
+    width: auto;
+    height: auto;
+  }
+}
+/* ipad , iphone , mobile */
+@media only screen and (max-width: 56.25rem) {
+  .fetchitem-max-row {
+    max-height: 50vh;
+    max-width: 80vw;
+    width: auto;
+    height: auto;
+  }
+}
+.fetchitem-align {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* laptio screen => FHD */
+@media only screen and (min-width: 112.5rem) {
+  .fetchItemModals-max-row {
+    max-height: 80vh;
+    max-width: 90vw;
+    width: auto;
+    height: auto;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* half screen , ipad pro */
+@media only screen and (min-width: 56.25rem) and (max-width: 112.5rem) {
+  .fetchItemModals-max-row {
+    max-height: 60vh;
+    max-width: 60vw;
+    width: auto;
+    height: auto;
+  }
+}
+/* ipad , iphone , mobile */
+@media only screen and (max-width: 56.25rem) {
+  .fetchItemModals-max-row {
+    max-height: 50vh;
+    max-width: 80vw;
+    width: auto;
+    height: auto;
+  }
+}
+.fetchItemModals-align {
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.user-icon {
+  height: 3rem;
+  width: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fetchItemModals-fa-edit {
+  width: 2rem;
+  height: 2rem;
+}
+
+.fetchPostModal-fa-edit {
+  width: 2rem;
+  height: 2rem;
+}
+.fetch-fa-edit {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+.fetch-a-edit {
+  color: red;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.fetch-fa-comment {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+}
+
+.read-more-button {
+  color: red;
+  cursor: pointer;
 }
